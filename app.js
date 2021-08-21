@@ -21,6 +21,13 @@ class Timer {
         const timeReamining = parseFloat(this.durationInput.value);
         this.durationInput.value = timeReamining - 1;
     };
+
+    get timeReamining() {
+        return parseFloat(this.durationInput.value);
+    }
+    set timeReamining(time) {
+        this.durationInput.value = time;
+    }
 }
 
 const durationInput = document.querySelector('#duration');
