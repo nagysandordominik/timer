@@ -18,7 +18,8 @@ class Timer {
     };
 
     tick = () => {
-        console.log('tick');
+        const timeReamining = parseFloat(this.durationInput.value);
+        this.durationInput.value = timeReamining - 1;
     };
 }
 
